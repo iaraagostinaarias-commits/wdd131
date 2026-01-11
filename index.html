@@ -1,14 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="descrition"
+        content="Home page by Iara Agostina Arias for WDD 131 - Dynamic Web Fundamentals. Includes a short bio, country overview, and useful related links.">
+    <meta name="author" content="Iara Agostina Arias">
+    <title>WDD 131 - Dynamic Web Fundamentals - Iara Arias</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarna&family=Inter:opsz@14..32&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>WDD 131 - Arias</h1>
+    <header>
+        <span class="top">WDD 131: Dynamic Web Fundamentals</span>
+        <nav class="navigation">
+            <ul>
+                <li><a href="https://ar.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/omni/1?lang=eng&id=p26#p26">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Iara A. Arias</h1>
+
+        <section class="card">
+            <fieldset class="about">
+                <h2>About Me</h2>
+                <div class="profile">
+                    <img src="images/profile.jpg"
+                        alt="A photo of a smiling girl with dark brown hair, wearing a white sweatshirt. In the background you can see the beach coast, a blue sky and white clouds."
+                        width="220">
+
+                    <p>Hi, I'm Iara Arias, I'm 21 years old and I live in Buenos Aires, Argentina. I'm currently a
+                        Software Development student
+                        at BYU Pathway Worldwide. I love all sports, spending time with my family, listening to music,
+                        and learning new
+                        programming skills every day.
+                    </p>
+                </div>
+
+                <h3>Buenos Aires, Argentina</h3>
+                <div class="country">
+                    <figure>
+                        <img src="images/argentina.jpg"
+                            alt="A photo of the official flag of Argentina placed on a mast and fluttering in the wind. It has three stripes: light blue, white, light blue, in that order. In the middle of the white stripe it has a design of the sun with a face."
+                            width="200">
+                        <figcaption>Official Argentine flag</figcaption>
+                    </figure>
+                    <p>Argentina is a country located in the south of South America. It's a country full of culture,
+                        with people from all over
+                        the world. Every place has its own special charm, both because of its nature and its people. We
+                        are passionate about
+                        football, food, and our traditional drink, mate.</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="resources">
+                <h2>Web Deb Resources</h2>
+                <nav>
+                    <ul>
+                        <li><a href="https://github.com/dashboard">GitHub</a></li>
+                        <li><a href="https://squoosh.app/">Squoosh</a></li>
+                        <li><a href="https://codepen.io/pen">CodePen</a></li>
+                        <li><a href="https://cssgridgarden.com/#es">Grid Garden game</a></li>
+                        <li><a href="https://portal.byupathway.edu/cmcportal/">BYU Student Portal</a></li>
+                        <li><a href="https://byui-cse.github.io/cse-ww-program/student/dev-standards.html">Frontend
+                                Development Standards</a></li>
+                    </ul>
+                </nav>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
