@@ -10,9 +10,7 @@
     padding: 0;
 }
 
-header,
-main,
-footer {
+header, main, footer {
     width: 100%;
     margin: 0 auto;
 }
@@ -22,7 +20,7 @@ body {
     font-family: "Amarna", sans-serif;
 }
 
-#course-content {
+#course-title {
     padding: 1rem;
     display: block;
     text-align: center;
