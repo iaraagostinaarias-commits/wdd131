@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2B1D07;
-    --secondary-color: #B28B5B;
+    --secondary-color: #F5CEB3;
     --accent1-color: #FFEFD5;
     --accent2-color: #fff;
 }
@@ -10,7 +10,9 @@
     padding: 0;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 100%;
     margin: 0 auto;
 }
@@ -25,6 +27,7 @@ body {
     display: block;
     text-align: center;
     color: var(--primary-color);
+    font-weight: 700;
     background-color: var(--secondary-color);
 }
 
@@ -132,6 +135,7 @@ figure {
 footer {
     padding: 1rem;
     text-align: center;
+    font-weight: 700;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
