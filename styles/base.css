@@ -132,6 +132,11 @@ figure {
     margin: 50% 10%;
 }
 
+.card a {
+    display: inline-block;
+    margin: 5px;
+}
+
 footer {
     padding: 1rem;
     text-align: center;
