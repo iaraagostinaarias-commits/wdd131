@@ -1,0 +1,59 @@
+/* GENERAL */
+:root {
+    --primary-color: #74abdf;
+    --secondary-color: #fff;
+    --accent1-color: #efb944;
+    --accent2-color: #f0cd99;
+    --accent3-color: #858c2a;
+    /* #4d0b06 another kind of red */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+header, footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+    
+
+/* SMALL VIEW */
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+h2 {
+    padding: 1rem;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* LARGER VIEW */
+@media (min-width: 700px) {
+   h2 {
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+   } 
+}
