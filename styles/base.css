@@ -36,6 +36,7 @@ header {
     display: flex;
     list-style: none;
     align-items: center;
+    color: var(--accent2-color);
     background-color: var(--primary-color);
 }
 
@@ -67,6 +68,7 @@ h1 {
     grid-column: 1/4;
     font-weight: 700;
     text-align: center;
+    color: var(--primary-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
