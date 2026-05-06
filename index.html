@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iara Arias's profile page</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Iara Agostina Arias</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Iara Agostina Arias. Bio information about the author of the page and its country.">
+    <meta name="author" content="Iara Agostina Arias">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarna:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Wb Fundamentals</span>
+
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="www.linkedin.com/in/iara-arias-038a21375">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/omni/1?lang=eng&id=p26#p26">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <h1>IARA AGOSTINA ARIAS</h1>
+        <h1>Iara A. Arias</h1>
+
+        <section class="cards">
+            <h2>About Me</h2>
+
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Photo of a smiling girl with a beach and clouds background"
+                    width="210">
+                <p>Hi, I'm Iara Arias, I'm 21 years old and I live in Buenos Aires, Argentina. I'm currently a
+                    Software Development student
+                    at BYU Pathway Worldwide. I love all sports, spending time with my family, listening to music,
+                    and learning new
+                    programming skills every day.</p>
+            </div>
+
+            <h3>Buenos Aires, Argentina</h3>
+
+            <figure>
+                <img src="images/argentina.jpg"
+                    alt="The official flag of Argentina. Its colors are light blue, white with a sun design, and light blue."
+                    width="210">
+                <figcaption>Official Flag of Argentina</figcaption>
+            </figure>
+            <p>Argentina is a country located in the south of South America. It's a country full of culture,
+                with people from all over
+                the world. Every place has its own special charm, both because of its nature and its people. We
+                are passionate about
+                football, food, and our traditional drink, mate.
+            </p>
+        </section>
+
+        <section class="cards">
+            <h2>Web Dev Resources</h2>
+
+            <nav>
+                <ul class="web-links">
+                    <li><a href="https://github.com/dashboard"">GitHub</a></li>
+                    <li><a href=" https://squoosh.app/">Squoosh</a></li>
+                    <li><a href="https://codepen.io/pen">CodePen</a></li>
+                    <li><a href="https://cssgridgarden.com/#es">Grid Garden Game</a></li>
+                    <li><a href="https://portal.byupathway.edu/cmcportal/">BYU Pathway Portal</a></li>
+                    <li><a href="https://byui-cse.github.io/cse-ww-program/student/dev-standards.html">Fronted
+                            Development Standars</a></li>
+                </ul>
+            </nav>
+        </section>
     </main>
+
+    <footer>
+        <p><span id="currentYear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

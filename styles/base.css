@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2B1D07;
+    --secondary-color: #F5CEB3;
+    --accent1-color: #FFEFD5;
+    --accent2-color: #fff;
+    --font-family: "Roboto", sans-serif;
+}
+
+/* revisar bien la fuente */
+
+
+body {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+#course-title {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.navigation-menu li {
+    flex: 1 1 auto;
+}
+
+.navigation-menu a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+.navigation-menu a:hover {
+    font-weight: 700;
+    border: 3px solid var(--accent2-color);
+}
+
+main {
+    width: 60%;
+    display: grid;
+    gap: 1rem;
+}
+
+h1 {
+    padding: 1.5rem;
+    grid-column: 1/4;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards {
+    margin-bottom: 5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.cards p {
+    margin: 2rem 1rem 0 2rem;
+}
+
+h2 {
+    padding: .7rem;
+    text-align: center;
+    color: var(--accent2-color);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: var(--primary-color);
+}
+
+.profile img {
+    float: right;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+h3 {
+    width: 50%;
+    margin: 2rem 2rem 1.5rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+figure {
+    position: relative;
+    float: left;
+    margin: 0 1rem 1rem 1.5rem;
+}
+
+figcaption {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.web-links {
+    margin: 6rem 2rem 0 2rem;
+    list-style: none;
+}
+
+.web-links li {
+    padding: 5px;
+}
+
+.web-links a:hover {
+    font-weight: 700;
+    text-align: center;
+    color: navy;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
