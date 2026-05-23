@@ -1,0 +1,35 @@
+/* GENERAL VIEW */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* penguin 
+#4e4a38 (verde/marron)
+#a36834 (naranja/marron)
+#656553 (gris/verde)
+#f1e290 (amarillo tranqui)
+#bd4d46 (rojo faro)
+*/
+
+:root {
+    --primary-color: #4c74ae;
+    --secondary-color: #aa9384;
+    --accent1-color: ;
+    --accent1-color: ;
+    --font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+/* MOBILE VIEW */
+
+/* LARGER VIEW */
+
+img {
+    width: 100%;
+    height: auto;
+}

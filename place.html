@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="Iara Agostina Arias">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Place Title</h1>
+    </header>
+
+    <main>
+        <!-- SEARCH HOW TO USE IMG SRCSET -->
+        <!-- CREO QUE SE USA PARA DISTINTAS IMG SEGUN TAMAÑO DE PANTALLA -->
+        <img src="images/neuquen.webp" alt="">
+        <img src="images/penguin.webp" alt="" srcset="">
+        <img src="images/faro.webp" alt="" srcset="">
+
+        <section>
+            <h2>Data</h2>
+
+            <!-- SEARCH HOW TO USE A LABEL IN HTML OR WHAT OTHER METHOD IS GOOD TO GET THIS INFO IN A DINAMICALY WAY -->
+            <label for="">Area: </label>
+            <label for="">Population: </label>
+            <label for="">Capital: </label>
+            <label for="">Languages: </label>
+            <label for="">Currency: </label>
+            <label for="">Time Zone: </label>
+            <label for="">Calling Code: </label>
+            <label for="">Internet TDL: </label>
+        </section>
+
+        <section>
+            <h2>Weather</h2>
+
+            <label for="">Temperature: </label>
+            <label for="">Conditions: </label>
+            <label for="">Wind: </label>
+            <label for="">Wind Chill: </label>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
