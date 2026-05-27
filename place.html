@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Neuquen, Argentina</title>
     <meta name="description" content="">
     <meta name="author" content="Iara Agostina Arias">
     <link rel="stylesheet" href="styles/place.css">
@@ -18,15 +18,17 @@
 
 <body>
     <header>
-        <h1>Place Title</h1>
+        <h1>Neuquen, Argentina</h1>
     </header>
 
     <main>
-        <!-- SEARCH HOW TO USE IMG SRCSET -->
-        <!-- CREO QUE SE USA PARA DISTINTAS IMG SEGUN TAMAÑO DE PANTALLA -->
-        <img src="images/neuquen.webp" alt="">
-        <img src="images/penguin.webp" alt="" srcset="">
-        <img src="images/faro.webp" alt="" srcset="">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/neuquen.webp">
+                <img src="images/faro.webp" alt="A white and red faro surranded by rocks and water in the ocean."
+                    width="1200">
+            </picture>
+        </div>
 
         <section>
             <h2>Data</h2>
