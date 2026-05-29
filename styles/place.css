@@ -3,35 +3,104 @@
     margin: 0;
     padding: 0;
 }
-/* penguin 
-#4e4a38 (verde/marron)
-#a36834 (naranja/marron)
-#656553 (gris/verde)
-#f1e290 (amarillo tranqui)
-#bd4d46 (rojo faro)
-*/
-
-/* ⛅ */
 
 :root {
     --primary-color: #4c74ae;
-    --secondary-color: #aa9384;
-    --accent1-color: ;
-    --accent1-color: ;
+    /* --secondary-color: #aa9384; */
+    --accent1-color: #f7b220;
+    /* --accent2-color: ; */
+    --primary-font-color: #fff;
+    --secondary-font-color: #000;
     --font-family: "Cormorant Garamond", serif;
 }
 
-h1 {
-    padding: 2rem;
-    text-align: center;
-    font-family: var(--font-family);
+body {
+    color: var(--primary-font-color);
 }
 
-/* MOBILE VIEW */
-
-/* LARGER VIEW */
+header,
+footer {
+    padding: 2rem;
+    font-size: larger;
+    text-align: center;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
 
 img {
     width: 100%;
     height: auto;
+    margin-top: 5px;
+}
+
+.sun-cloud {
+    width: 50px;
+    height: auto;
+}
+
+h2 {
+    padding: 1rem;
+    margin-bottom: 10px;
+    background-color: var(--accent1-color);
+}
+
+/* MOBILE VIEW */
+section {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.place-data p,
+.weather p {
+    padding: 5px;
+    font-size: larger;
+    color: var(--secondary-font-color);
+}
+
+
+
+/* LARGER VIEW */
+@media (min-width: 768px) {
+    body {
+        width: 2200px;
+        margin: 0 auto;
+    }
+
+    /* main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+
+    section {
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        background-color: var(--primary-font-color);
+    }
+
+    h2 {
+        text-align: left;
+        padding-left: 2rem;
+        margin: 10px 40px 0 0;
+        background-color: #f7b220;
+    }
+
+    .place-data {
+        top: 15rem;
+        left: 15rem;
+    }
+
+    .weather {
+        right: 15rem;
+        bottom: 10rem;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .sun-cloud {
+        display: none;
+    }
 }
