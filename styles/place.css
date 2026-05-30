@@ -6,9 +6,7 @@
 
 :root {
     --primary-color: #4c74ae;
-    /* --secondary-color: #aa9384; */
     --accent1-color: #f7b220;
-    /* --accent2-color: ; */
     --primary-font-color: #fff;
     --secondary-font-color: #000;
     --font-family: "Cormorant Garamond", serif;
@@ -49,31 +47,30 @@ section {
     font-size: larger;
     text-align: center;
     padding-bottom: 20px;
+    color: var(--secondary-font-color);
 }
 
 .place-data p,
 .weather p {
     padding: 5px;
-    /* font-size: larger; */
-    color: var(--secondary-font-color);
 }
-
 
 
 /* LARGER VIEW */
 @media (min-width: 768px) {
-    body {
-        width: 2200px;
+    .hero {
+        width: 90%;
         margin: 0 auto;
+        position: relative;
     }
 
-    /* main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
+    .hero picture img {
+        margin-top: 0;
+        display: block;
+    }
 
     section {
-        width: 20rem;
+        width: 14rem;
         height: auto;
         position: absolute;
         background-color: var(--primary-font-color);
@@ -83,17 +80,17 @@ section {
         text-align: left;
         padding-left: 2rem;
         margin: 10px 40px 0 0;
-        background-color: #f7b220;
+        background-color: var(--accent1-color);
     }
 
     .place-data {
-        top: 15rem;
-        left: 15rem;
+        left: 4%;
+        top: 6%;
     }
 
     .weather {
-        right: 15rem;
-        bottom: 10rem;
+        right: 4%;
+        bottom: 6%;
     }
 
     .weather h2::after {
@@ -102,10 +99,34 @@ section {
 
     .place-data p,
     .weather p {
-        font-size: larger;
+        font-size: large;
     }
 
     .sun-cloud {
         display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        background-color: var(--primary-font-color);
+    }
+
+    .place-data {
+        left: 5%;
+        top: 10%;
+    }
+
+    .weather {
+        right: 5%;
+        bottom: 10%;
+    }
+
+    .place-data p,
+    .weather p {
+        font-size: larger;
     }
 }
