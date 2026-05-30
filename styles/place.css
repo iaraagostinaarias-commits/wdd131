@@ -54,7 +54,7 @@ section {
 .place-data p,
 .weather p {
     padding: 5px;
-    font-size: larger;
+    /* font-size: larger; */
     color: var(--secondary-font-color);
 }
 
@@ -98,6 +98,11 @@ section {
 
     .weather h2::after {
         content: " ⛅";
+    }
+
+    .place-data p,
+    .weather p {
+        font-size: larger;
     }
 
     .sun-cloud {
