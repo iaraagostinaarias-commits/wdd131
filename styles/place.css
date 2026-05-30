@@ -44,7 +44,7 @@ h2 {
 
 /* MOBILE VIEW */
 section {
-    font-size: larger;
+    font-size: large;
     text-align: center;
     padding-bottom: 20px;
     color: var(--secondary-font-color);
