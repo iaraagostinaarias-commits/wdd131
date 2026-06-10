@@ -86,3 +86,59 @@ const temples = [
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/quito-ecuador-temple/quito-ecuador-temple-31201.jpg"
     }
 ];
+
+const home = document.querySelector('#home');
+const oldTemples = document.querySelector('#old');
+const newTemples = document.querySelector('#new');
+const largeTemples = document.querySelector('#large');
+const smallTemples = document.querySelector('#small');
+
+function stringToArray(string) {
+    const newArray = string.split(',');
+    const arrayToNum = Number(newArray[0]);
+
+    return arrayToNum;
+}
+
+home.addEventListener("click", (event) => {
+    event.preventDefault();
+    createTemplesCards(temples);
+});
+
+oldTemples.addEventListener("click", (event) => {
+    event.preventDefault();
+    createTemplesCards(temples.filter(temple => stringToArray(temple.dedicated) < 1900));
+});
+
+newTemples.addEventListener("click", (event) => {
+    event.preventDefault();
+    createTemplesCards(temples.filter(temple => stringToArray(temple.dedicated) > 2000));
+});
+
+largeTemples.addEventListener("click", (event) => {
+    event.preventDefault();
+    createTemplesCards(temples.filter(temple => temple.area > 90000));
+});
+
+smallTemples.addEventListener("click", (event) => {
+    event.preventDefault();
+    createTemplesCards(temples.filter(temple => temple.area < 10000));
+});
+
+function createTemplesCards(filteredTemples) {
+    document.querySelector('#gallery').innerHTML = "";
+    const gallery = document.querySelector('#gallery');
+    filteredTemples.forEach(temple => {
+        const section = document.createElement('section');
+        section.innerHTML = `
+        <h2>${temple.templeName}</h2>
+        <p>Location: ${temple.location}</p>
+        <p>Dedicated: ${temple.dedicated}</p>
+        <p>Size: ${temple.area} sq ft</p>
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">
+        `
+        gallery.appendChild(section);
+    })
+}
+
+createTemplesCards(temples);

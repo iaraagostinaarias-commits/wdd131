@@ -91,7 +91,7 @@ h1 {
     text-align: center;
 }
 
-.container {
+#gallery {
     display: grid;
     grid-gap: 25px;
     margin-right: 1rem;
@@ -99,9 +99,19 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+#gallery section {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #efefef;
+    box-shadow: 0 0 10px #333;
+}
+
+#gallery h2,
+#gallery p {
+    text-align: center;
+}
+
 img {
-    width: 100%;
-    height: 200px;
     padding: 1px;
     margin: .5rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -111,11 +121,6 @@ img:hover {
     box-shadow: 0 0 50px #333;
 }
 
-figcaption {
-    font-size: medium;
-    text-align: center;
-    font-family: var(--secondary-font-family);
-}
 
 @media (min-width: 740px) {
     header {
@@ -138,13 +143,13 @@ figcaption {
         display: none;
     }
 
-    .container {
+    #gallery {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
 @media (min-width: 900px) {
-    .container {
+    #gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
