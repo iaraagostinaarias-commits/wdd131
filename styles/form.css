@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+header,
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #2d032b;
+}
+
+main {
+    margin: 1rem 0;
+}
+
+.ppf {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #d5cdd5;
+}
+
+.ppf fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+.ppf div {
+    padding-top: 1rem;
+    font-weight: 700;
+}
+
+.ppf label {
+    display: block;
+    padding-top: 1rem;
+    font-weight: 600;
+    color: var(--text2-color);
+}
+
+.ppf input[type="date"],
+.ppf input[type="text"],
+.ppf select,
+.ppf textarea {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    padding: .75rem;
+    border: none;
+    background-color: #fff;
+    appearance: none;
+}
+
+.ppf input[type="radio"],
+.ppf input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.ppf input[type="submit"] {
+    padding: .75rem;
+    border: none;
+    margin: 1rem;
+    width: 100%;
+    max-width: 425px;
+    font-weight: 700;
+    font-size: large;
+}

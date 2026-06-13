@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="">
+    <meta name="author" content="Iara Agostina Arias">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="ppf">
+            <fieldset>
+                <label>Product Name
+                    <select name="prodName" id="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="star">Overal Rating
+                <label><input type="radio" name="rating" id="rate" required>&star;</label>
+                <label><input type="radio" name="rating" id="rate" required>&star; &star;</label>
+                <label><input type="radio" name="rating" id="rate" required>&star; &star; &star;</label>
+                <label><input type="radio" name="rating" id="rate" required>&star; &star; &star; &star;</label>
+                <label><input type="radio" name="rating" id="rate" required>&star; &star; &star; &star; &star;</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation<input type="date" name="date" id="date" required></label>
+            </fieldset>
+
+            <fieldset>
+                <div>Useful Features</div>
+                <label><input type="checkbox" name="dura" id="durability">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease">Ease of Use</label>
+                <label><input type="checkbox" name="perf" id="perf">Performance</label>
+                <label><input type="checkbox" name="desing" id="desing">Desing</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Written Review
+                    <textarea name="revText" id="revText"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name<input type="text" name="userName" id="userName"></label>
+            </fieldset>
+
+            <input type="submit" value="Post My Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
