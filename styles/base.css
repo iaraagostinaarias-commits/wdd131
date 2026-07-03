@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+#583432
+#d39237
+#f2e8da
+
+#e0c7d7
+#282b34
+*/
+:root {
+    --primary-color: #583432;
+    --secondary-color: #d39237;
+    --accent-color: #f2e8da;
+    --font1-family: "Playfair Display", serif;
+    --font2-family: "Roboto", sans-serif;
+}
+
+header {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--accent-color);
+    font-family: var(--font2-family);
+    background-color: var(--primary-color);
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: x-large;
+    font-family: var(--font2-family);
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+nav a:hover {
+    font-weight: 700;
+    border: 3px solid var(--accent-color);
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--font1-family);
+}
+
+h2 {
+    padding: .8rem;
+    text-align: center;
+    color: var(--accent-color);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: var(--secondary-color);
+}
+
+h3 {
+    width: 50%;
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    border-radius: 6px;
+    border: 1px solid var(--secondary-color);
+}
+
+.card p {
+    margin: 1.5rem;
+    font-size: larger;
+}
+
+img {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile {
+    float: right;
+    margin: 1rem;
+}
+
+.flag {
+    float: left;
+    margin: .5rem 1rem 0 2rem;
+}
+
+.flag figcaption {
+    margin: 6px 0 2rem 0;
+    text-align: center;
+}
+
+section ul {
+    margin: 30%;
+}
+
+section a {
+    font-size: large;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+section a:hover {
+    font-weight: 700;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    .container {
+        width: 50%;
+        grid-template-columns: 2fr 1fr;
+    }
+}
