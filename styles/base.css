@@ -52,7 +52,7 @@ nav a {
     text-align: center;
     font-size: larger;
     text-decoration: none;
-    color: var(--accent-color);
+    color: #000;
 }
 
 nav a:hover {
@@ -70,7 +70,6 @@ h1 {
 h2 {
     padding: .8rem;
     text-align: center;
-    color: var(--accent-color);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     background-color: var(--secondary-color);
