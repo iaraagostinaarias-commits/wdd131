@@ -119,11 +119,16 @@ img {
     text-align: center;
 }
 
-section ul {
+.card ul {
     margin: 30%;
 }
 
-section a {
+.card li {
+    padding: 5px;
+}
+
+.card a {
+
     font-size: large;
     text-decoration: none;
     color: var(--primary-color);
@@ -131,7 +136,6 @@ section a {
 
 section a:hover {
     font-weight: 700;
-    border-bottom: 1px solid var(--primary-color);
 }
 
 @media (min-width: 640px) {
