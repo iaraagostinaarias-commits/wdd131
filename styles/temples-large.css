@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        grid-column: 1/4;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery figure {
+        width: 70%;
+    }
+}
