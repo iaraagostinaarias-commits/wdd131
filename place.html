@@ -4,49 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place</title>
-    <meta name="description" content="WDD 131 - BYU Idaho.">
+    <title>WDD 131 - Neuquén, Argentina</title>
+    <meta name="description"
+        content="Information about the province of Neuquén, Argentina, its climatic conditions, and representative images of the place.">
     <meta name="author" content="Iara Agostina Arias">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Place Title</h1>
+        <h1>Neuquen, Argentina</h1>
     </header>
 
     <main>
-        <picture>
-            <source srcset="" media="(min-width: 1100px)">
-            <img src="" alt="" width="">
-        </picture>
+        <div class="hero">
+            <picture>
+                <source srcset="images/arg3.webp" media="(min-width: 768px)">
+                <img src="images/arg1.webp" alt="" width="1200">
+            </picture>
 
-        <section>
-            <h2>Data</h2>
+            <section class="data">
+                <h2>Data</h2>
 
-            <p><strong>Area: </strong></p>
-            <p><strong>Population: </strong></p>
-            <p><strong>Capital: </strong></p>
-            <p><strong>Languages: Spanish</strong></p>
-            <p><strong>Currrency: Argentine peso</strong></p>
-            <p><strong>Time Zone: </strong></p>
-            <p><strong>Calling Code: +54</strong></p>
-            <p><strong>Intenet TLD: .ar</strong></p>
-        </section>
+                <p><strong>Area: </strong>94,078 sq km</p>
+                <p><strong>Population: </strong>793,288</p>
+                <p><strong>Capital: </strong>Neuquen</p>
+                <p><strong>Languages: </strong>Spanish</p>
+                <p><strong>Currency: </strong>Argentine peso (ARS)</p>
+                <p><strong>Time Zone: </strong>UTC-3</p>
+                <p><strong>Calling Code: </strong>+54</p>
+                <p><strong>Internet TDL: </strong>.ar</p>
+            </section>
 
-        <section>
-            <h2>Weather</h2>
+            <section class="weather">
+                <h2>Weather</h2>
 
-            <img src="images/weather-sun.svg" alt="" width="150">
-            <p><strong>Temperature: </strong></p>
-            <p><strong>Conditions: </strong></p>
-            <p><strong>Wind: </strong></p>
-            <p><strong>Wind Chill: </strong></p>
-        </section>
+                <img src="images/weather-sun.svg" alt="An icon of a sun and a cloud." width="70" class="icon">
+                <p><strong>Temperature: </strong><span id="temperature"></span></p>
+                <p><strong>Conditions: </strong>Partly Cloudy</p>
+                <p><strong>Wind: </strong><span id="windSpeed"></span></p>
+                <p><strong>Wind Chill: </strong><span id="windChill"></span></p>
+            </section>
+        </div>
     </main>
 
     <footer>
