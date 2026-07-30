@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description"
+        content="WDD 131 - BYU IDAHO. An album with pictures of temples of the Church of Jesus Christ.">
+    <meta name="author" content="Iara Agostina Arias">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="title">Temple Album</span>
+        <button id="menuBtn" aria-label="Menu Button"></button>
+
+        <nav>
+            <ul>
+                <li><a href="filtered-temples.html" id="home">Home</a></li>
+                <li><a href="#" id="oldTemp">Old</a></li>
+                <li><a href="#" id="newTemp">New</a></li>
+                <li><a href="#" id="largeTemp">Large</a></li>
+                <li><a href="#" id="smallTemp">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gallery</h1>
+        <div class="gallery"></div>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
