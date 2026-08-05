@@ -54,9 +54,13 @@ h2 {
     margin: 1.5rem;
 }
 
-.scenarios li {
-    padding: .5rem;
+.scenarios div {
+    padding: .5rem 0;
     margin: .5rem 0 .5rem 2rem;
+}
+
+.scenarios p {
+    margin: 3px;
 }
 
 .colors {
