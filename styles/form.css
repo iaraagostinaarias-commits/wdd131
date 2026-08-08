@@ -111,3 +111,9 @@ main {
 .thanks {
     font-size: larger;
 }
+
+@media (min-width: 768px) {
+    body {
+        font-size: x-large;
+    }
+}
