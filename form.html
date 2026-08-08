@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="WDD 131 - BYU Idaho. A form that allows you to provided your review of a product.">
+    <meta name="author" content="Iara Agostina Arias">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get" class="wf1">
+            <fieldset>
+                <fieldset>
+                    <label>Product Name*
+                        <select name="product" id="productOptions" required>
+                            <option value="" disabled selected>Select a Product &#9662;</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <div>Overal Rating*</div>
+                    <div class="rating">
+                        <input type="radio" name="star" id="5rate" value="5" required><label for="5rate">★</label>
+                        <input type="radio" name="star" id="4rate" value="4" required><label for="4rate">★</label>
+                        <input type="radio" name="star" id="3rate" value="3" required><label for="3rate">★</label>
+                        <input type="radio" name="star" id="2rate" value="2" required><label for="2rate">★</label>
+                        <input type="radio" name="star" id="1rate" value="1" required><label for="1rate">★</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>Date of Installation*<input type="date" name="date" id="date" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <div>Which features did you find in the product? (Chech all that apply)</div>
+                    <label><input type="checkbox" name="features" id="features" value="yes">Durability</label>
+                    <label><input type="checkbox" name="features" id="features" value="yes">Easy of
+                        Use</label>
+                    <label><input type="checkbox" name="features" id="features" value="yes">Perfomance</label>
+                    <label><input type="checkbox" name="features" id="features" value="yes">Design</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Written Review <span class="opt">(Optional)</span><textarea name="wReview"
+                            id="wReview"></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Your Name <span class="opt">(Optional)</span><input type="text" name="userName"
+                            id="userName"></label>
+                </fieldset>
+
+                <input type="submit" value="Post Your Review">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
