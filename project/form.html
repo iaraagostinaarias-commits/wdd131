@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="">
+    <title>World Castle Explorer</title>
+    <meta name="description"
+        content="A form to fill out to create a mini and basic travel plan to the castles, and a small photo of your favorite castles.">
     <meta name="author" content="Iara Agostina Arias">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/base.js" defer></script>
@@ -23,28 +24,57 @@
 
 <body>
     <header>
-        <img src="images/castle-logo-banana.svg" alt="" width="200">
+        <img class="logo" src="images/castle-logo-banana.svg" alt="" width="200">
         <span class="site-title">World Castle Explorer</span>
+        <button id="menuBtn"></button>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Castle</a></li>
-                <li><a href="#">Book a Trip</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="castles.html">Castle</a></li>
+                <li><a href="form.html">Book a Trip</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <img src="" alt="" class="hero">
+        <form action="yourPlan.html" method="get" class="wf1">
+            <fieldset>
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">First Name<input type="text" name="fname" id="userName" required></label>
+                    <label for="userLName">Last Name<input type="text" name="lname" id="userLName" required></label>
 
-        <form action=""></form>
+                    <!-- <label for="userEmail">Email (Optional, if you would like to received news about the castles)<input type="email" name="uEmail"
+                    id="userEmail" placeholder="someone@gmail.com"></label> -->
+                </fieldset>
 
-        <div class="favGallery"></div>
+                <fieldset>
+                    <legend>Select a Castle</legend>
+                    <label for="castleOpt">
+                        <select name="castles" id="castleOpt" required>
+                            <option value="" disabled selected>Select a Castle &#9662;</option>
+                        </select>
+                    </label>
+
+                    <label for="date">
+                        <input type="date" name="tripDate">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Addiotional</legend>
+                    <label for="comments">Notes (if you have something specific you want to save for this
+                        castle)<textarea name="comments" id="comments"></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Create Your Plan">
+            </fieldset>
+        </form>
     </main>
 
     <footer>
-        <p><span class="currentyear"></span></p>
-        <p class="lastModified"></p>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
