@@ -211,11 +211,22 @@ h1 {
         object-fit: cover;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
+        animation: fade 2s;
     }
 
     .castleDescrp {
         margin: 1.5rem;
         text-align: left;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
