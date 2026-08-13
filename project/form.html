@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img class="logo" src="images/castle-logo-banana.svg" alt="" width="200">
+        <img class="logo" src="images/castle-logo-banana.webp" alt="" width="200">
         <span class="site-title">World Castle Explorer</span>
         <button id="menuBtn" aria-label="Menu Button"></button>
         <nav>
@@ -46,15 +46,12 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Select a Castle</legend>
-                    <label for="castleOpt"></label>
-                        <select name="castles" id="castleOpt" required>
+                    <legend>Castles</legend>
+                    <label for="castleOpt">Select a Castle<select name="castles" id="castleOpt" required>
                             <option value="" disabled selected>Select a Castle &#9662;</option>
-                        </select>
+                        </select></label>
 
-                    <label for="date">
-                        <input type="date" name="tripDate" id="date">
-                    </label>
+                    <label for="date">Trip Date<input type="date" name="tripDate" id="date"></label>
                 </fieldset>
 
                 <fieldset>
