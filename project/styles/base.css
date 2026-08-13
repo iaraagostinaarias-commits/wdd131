@@ -100,6 +100,11 @@ footer {
     background-color: var(--primary-color);
 }
 
+.link:hover {
+    font-weight: 700;
+    box-shadow: 0 0 10px #3d3d3d;
+}
+
 
 /* HOME PAGE */
 .hero {
@@ -122,7 +127,10 @@ footer {
         background-color: var(--secondary-color);
     }
 
-
+    a:hover {
+        font-weight: 700;
+        box-shadow: 0 0 10px #3d3d3d;
+    }
 }
 
 .about-us,
@@ -212,8 +220,8 @@ h1 {
 }
 
 .wf1 {
-width: 100%;
-max-width: 800px;
+    width: 100%;
+    max-width: 800px;
 
     fieldset {
         margin: 2rem 0;
@@ -231,6 +239,7 @@ max-width: 800px;
 
     label {
         display: block;
+        font-size: larger;
         padding-top: 1rem;
         color: var(--primary-color);
         font-family: var(--font2-family);
@@ -250,6 +259,10 @@ max-width: 800px;
         appearance: none;
     }
 
+    select option {
+        background-color: var(--accent2-color);
+    }
+
     input[type="submit"] {
         border: none;
         font-size: 1rem;
@@ -266,6 +279,17 @@ max-width: 800px;
     input[type="submit"]:hover {
         font-weight: 700;
         background-color: var(--primary-color);
+    }
+}
+
+.message {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+
+    p {
+        padding-bottom: 6px;
+        font-size: large;
     }
 }
 
