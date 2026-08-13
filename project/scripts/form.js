@@ -64,3 +64,4 @@ function displayCastlesOptions(array) {
 }
 
 displayCastlesOptions(castles);
+
